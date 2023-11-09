@@ -2,6 +2,6 @@
 
 setlocal
 
-"%GIT_SHELL_ROOT%\bin\bash.exe" "%~dpn0.sh"
+"%GIT_SHELL_ROOT%\bin\bash.exe" "%~dpn0.sh" %*
 
 pause
