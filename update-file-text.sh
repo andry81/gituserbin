@@ -23,9 +23,14 @@
 #   cd myrepo/path
 #   git_filter_branch_update_file_text.sh . README.md '<p/>' '</p>' -- master ^t1 ^t2
 #
-#   # Remove multiline text with mixed line returns
+#   # Remove specific 2 line text block with mixed line returns.
 #   >
 #   cd myrepo/path
-#   git_filter_branch_update_file_text.sh -E . changelog.txt '2023\.05\.23:\r?\n[^\r\n]+\r?\n' '' -- master ^t1 ^t2
+#   git_filter_branch_update_file_text.sh -E . changelog.txt '2023\.05\.23:(\r\n|\n|\r)[^\r\n]+(\r\n|\n|\r)' '' -- master ^t1 ^t2
+#
+#   # Remove empty lines after each `YYYY.MM.DD:` or `YYYY-MM-DD:` text lines.
+#   >
+#   cd myrepo/path
+#   git_filter_branch_update_file_text.sh -E . changelog.txt '(\d\d\d\d[.-]\d\d[.-]\d\d:)(\r\n|\n|\r)[\r\n]*' '\1\2' -- master ^t1 ^t2
 
 "$PROJECTS_ROOT"'/andry81/tacklelib/tacklelib/bash/tacklelib/tools/git/git_filter_branch_update_file_text.sh' "$@"
