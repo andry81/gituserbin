@@ -15,6 +15,16 @@
 #   4. 'joseph' from 'joe321@email.com'   -> 'joe123' from 'joe321@email.com'
 #
 
+if [[ -z "${GIT_USER+x}" ]]; then
+  echo "$0: error: GIT_USER must be defined"
+  exit 255
+fi >&2
+
+if [[ -z "${GIT_USER_EMAIL+x}" ]]; then
+  echo "$0: error: GIT_USER_EMAIL must be defined"
+  exit 255
+fi >&2
+
 git filter-branch --env-filter \
     "source \"$PROJECTS_ROOT\"'/andry81/gitcmd/gitcmd/git_filter_branch_user.sh'; \
     git_fb_u a:c \"$GIT_USER_EMAIL\" '*' \"$GIT_USER@localhost\" '*'; \
