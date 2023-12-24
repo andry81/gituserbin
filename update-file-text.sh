@@ -33,4 +33,4 @@
 #   cd myrepo/path
 #   git_filter_branch_update_file_text.sh -E . changelog.txt '(\d\d\d\d[.-]\d\d[.-]\d\d:)(\r\n|\n|\r)[\r\n]*' '\1\2' -- master ^t1 ^t2
 
-"$PROJECTS_ROOT"'/andry81/tacklelib/tacklelib/bash/tacklelib/tools/git/git_filter_branch_update_file_text.sh' "$@"
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_filter_branch_update_file_text.sh' "$@"

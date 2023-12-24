@@ -17,4 +17,4 @@
 #   cd myrepo/path
 #   git_filter_repo_replace_commit_msg.sh -use-re-sub -re-sub-flags 're.DOTALL' '(\d\d\d\d[.-]\d\d[.-]\d\d:)(\r\n|\n|\r)[\r\n]*' '\1\2'
 
-"$PROJECTS_ROOT"'/andry81/tacklelib/tacklelib/bash/tacklelib/tools/git/git_filter_repo_replace_commit_msg.sh' "$@"
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_filter_repo_replace_commit_msg.sh' "$@"

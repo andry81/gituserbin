@@ -34,4 +34,4 @@
 #     * `dir-or-file`     - (file/dir) removed
 #
 
-"$PROJECTS_ROOT"'/andry81/tacklelib/tacklelib/bash/tacklelib/tools/git/git_filter_repo_remove_path.sh' "$@"
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_filter_repo_remove_path.sh' "$@"
