@@ -32,5 +32,12 @@
 #   >
 #   cd myrepo/path
 #   git_filter_branch_update_file_text.sh -E . changelog.txt '(\d\d\d\d[.-]\d\d[.-]\d\d:)(\r\n|\n|\r)[\r\n]*' '\1\2' -- master ^t1 ^t2
+#
+#   # Remove file UTF-8 BOM characters.
+#   # Based on:
+#   #   https://unix.stackexchange.com/questions/381230/how-can-i-remove-the-bom-from-a-utf-8-file/381263#381263
+#   >
+#   cd myrepo/path
+#   git_filter_branch_update_file_text.sh -E --sed-expr-prefix '' --sed-expr-begin 1s --sed-expr-end '' . changelog.txt '^\xEF\xBB\xBF' '' -- master
 
 "$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_filter_branch_update_file_text.sh' "$@"
