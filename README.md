@@ -21,7 +21,8 @@
 <!-- -->
 
 <p align="center">
-  <a href="#dependecies">Dependencies</a>
+  <a href="https://github.com/andry81/gituserbin/tree/HEAD/README_EN.txt">Readme</a>
+• <a href="#dependecies">Dependencies</a>
 </p>
 
 <p align="center">
