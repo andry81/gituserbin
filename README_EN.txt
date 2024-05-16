@@ -40,8 +40,32 @@ Second mirror:
 -------------------------------------------------------------------------------
 3. PREREQUISITES
 -------------------------------------------------------------------------------
-You must put the `gitcmd` repository working copy into the
-`$PROJECTS_ROOT/andry81/gitcmd/gitcmd` directory.
+Currently used these set of OS platforms, applications to run
+with or from and repositories:
+
+1. OS platforms:
+
+* Windows 7+
+
+2. Applications:
+
+* msys2
+  https://www.msys2.org/#installation
+  - Freeware Unix-like environment for the Windows.
+
+* cygwin
+  https://cygwin.com
+  - Freeware Unix-like environment for the Windows.
+
+* Git 2.24+
+  https://git-scm.com
+  - Freeware console application to maintain GIT version control system.
+
+3. Repositories:
+
+* gitcmd
+  You must put the repository working copy into the
+  `$PROJECTS_ROOT/andry81/gitcmd/gitcmd` directory.
 
 -------------------------------------------------------------------------------
 4. DEPENDENCIES
@@ -104,6 +128,16 @@ each corresponding script to find out which one variable you must to define.
 
   Git user with authentication to use from `gituserbin/ssh-login-*.sh`
   scripts.
+
+* SSH_SHELL_ROOT
+
+  Main environment variable to call `ssh.exe` console utility from
+  `gituserbin/ssh-*.*` scripts.
+
+* SSH_GIT_AUTH_USER
+
+  Git user with authentication to use in case of git+ssh authentification,
+  for example, in `gitcmd/git_init.sh` (`gituserbin/git-init.sh`) script.
 
 -------------------------------------------------------------------------------
 7. AUTHOR
