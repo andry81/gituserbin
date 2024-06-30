@@ -3,7 +3,7 @@
 # Examples:
 #   >
 #   cd myrepo/path
-#   git_filter_branch_remove_path_list.sh dir1/ file1 file2/ dir-or-file // -- dev ^t1 ^master
+#   git_filter_repo_remove_paths.sh dir1/ file1 file2/ dir-or-file // --refs dev ^t1 ^master --force
 #
 #   NOTE:
 #     * `dir1`            - (dir) removed
@@ -15,4 +15,4 @@
 #     * `file2`           - (file) NOT removed
 #     * `dir-or-file`     - (file/dir) removed
 
-"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_filter_branch_remove_path_list.sh' "$@"
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_filter_repo_remove_paths.sh' "$@"
