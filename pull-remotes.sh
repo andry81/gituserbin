@@ -1,3 +1,3 @@
 #!/bin/bash
 
-"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_pull_remotes.sh' "$@"
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/scripts/git_pull_remotes.sh' "$@"

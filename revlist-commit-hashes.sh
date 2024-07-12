@@ -17,4 +17,4 @@
 #   cd myrepo/path
 #   git_gen_revlist_commit_hashes.sh -r // master
 
-"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_gen_revlist_commit_hashes.sh' "$@"
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/scripts/git_gen_revlist_commit_hashes.sh' "$@"

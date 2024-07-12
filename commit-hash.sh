@@ -13,4 +13,4 @@
 #   cd myrepo/path
 #   git_gen_commit_hash.sh master git hash-object --stdin
 
-"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_gen_commit_hash.sh' "$@"
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/scripts/git_gen_commit_hash.sh' "$@"

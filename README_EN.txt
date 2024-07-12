@@ -1,5 +1,5 @@
 * README_EN.txt
-* 2024.05.16
+* 2024.07.12
 * gituserbin
 
 1. DESCRIPTION
@@ -111,13 +111,13 @@ each corresponding script to find out which one variable you must to define.
 
 * GIT_REPO_DEFAULT_REMOTES
 
-  Variable for the `gitcmd/git_init.sh` (`gituserbin/git-init.sh`) script to
-  initialize multiple remotes by default.
+  Variable for the `gitcmd/scripts/git_init.sh` (`gituserbin/git-init.sh`)
+  script to initialize multiple remotes by default.
 
 * GIT_USER, GIT_USER_MAIL
 
-  Git user and email by default for the `gitcmd/git_filter_branch_user.sh`
-  (`gituserbin/fix-mail.sh`) script.
+  Git user and email by default for the
+  `gitcmd/scripts/git_filter_branch_user.sh` (`gituserbin/fix-mail.sh`) script.
 
 * GIT_SHELL_ROOT
 
@@ -136,8 +136,9 @@ each corresponding script to find out which one variable you must to define.
 
 * SSH_GIT_AUTH_USER
 
-  Git user with authentication to use in case of git+ssh authentification,
-  for example, in `gitcmd/git_init.sh` (`gituserbin/git-init.sh`) script.
+  Git user with authentication to use in case of git+ssh authentication,
+  for example, in `gitcmd/scripts/git_init.sh`
+  (`gituserbin/git-init.sh`) script.
 
 -------------------------------------------------------------------------------
 7. AUTHOR

@@ -26,11 +26,11 @@ if [[ -z "${GIT_USER_EMAIL+x}" ]]; then
 fi >&2
 
 git filter-branch --env-filter \
-    "source \"$PROJECTS_ROOT\"'/andry81/gitcmd/gitcmd/git_filter_branch_user.sh'; \
+    "source \"$PROJECTS_ROOT\"'/andry81/gitcmd/gitcmd/scripts/git_filter_branch_user.sh'; \
     git_fb_u a:c \"$GIT_USER_EMAIL\" '*' \"$GIT_USER@localhost\" '*'; \
     git_fb_u a:c \"$GIT_USER_EMAIL\" '*' \"$GIT_USER@${GIT_USER_EMAIL#*@}\" '*'; \
     git_fb_u a:c \"$GIT_USER_EMAIL\" \"$GIT_USER\" 'user@mail.com' 'user'; \
     for (( i=0; i < ${#GIT_USER_VARIANTS[@]}; i++ )); then \
       git_fb_u a:c \"$GIT_USER_EMAIL\" \"$GIT_USER\" \"$GIT_USER_EMAIL\" \"${GIT_USER_VARIANTS[i]}\"; \
     done" -- --all && \
-"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_filter_branch_cleanup.sh'
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/scripts/git_filter_branch_cleanup.sh'

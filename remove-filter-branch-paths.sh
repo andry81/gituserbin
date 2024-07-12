@@ -15,4 +15,4 @@
 #     * `file2`           - (file) NOT removed
 #     * `dir-or-file`     - (file/dir) removed
 
-"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_filter_branch_remove_paths.sh' "$@"
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/scripts/git_filter_branch_remove_paths.sh' "$@"

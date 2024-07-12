@@ -40,4 +40,4 @@
 #   cd myrepo/path
 #   git_filter_branch_update_file_text.sh -E --sed-expr-prefix '' --sed-expr-begin 1s --sed-expr-end '' . changelog.txt '^\xEF\xBB\xBF' '' -- master
 
-"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/git_filter_branch_update_file_text.sh' "$@"
+"$PROJECTS_ROOT"'/andry81/gitcmd/gitcmd/scripts/git_filter_branch_update_file_text.sh' "$@"
