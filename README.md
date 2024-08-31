@@ -34,3 +34,4 @@
 ## <a name="dependecies">Dependencies</a>
 
 * https://github.com/andry81/gitcmd
+* https://github.com/andry81/contools

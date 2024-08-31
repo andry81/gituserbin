@@ -1,5 +1,5 @@
 * README_EN.txt
-* 2024.07.12
+* 2024.08.31
 * gituserbin
 
 1. DESCRIPTION
@@ -37,6 +37,15 @@ First mirror:
 Second mirror:
   * https://gitlab.com/andry81/gitcmd
 
+Contools:
+
+Primary:
+  * https://github.com/andry81/contools
+First mirror:
+  * https://sf.net/p/contools/contools
+Second mirror:
+  * https://gitlab.com/andry81/contools
+
 -------------------------------------------------------------------------------
 3. PREREQUISITES
 -------------------------------------------------------------------------------
@@ -67,10 +76,15 @@ with or from and repositories:
   You must put the repository working copy into the
   `$PROJECTS_ROOT/andry81/gitcmd/gitcmd` directory.
 
+* contools
+  You must put the repository working copy into the
+  `$PROJECTS_ROOT/andry81/contools/contools` directory.
+
 -------------------------------------------------------------------------------
 4. DEPENDENCIES
 -------------------------------------------------------------------------------
-* Gitcmd
+* gitcmd
+* contools
 
 -------------------------------------------------------------------------------
 5. USAGE
