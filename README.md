@@ -22,7 +22,7 @@
 
 <p align="center">
   <a href="https://github.com/andry81/gituserbin/tree/HEAD/README_EN.txt">Readme</a>
-• <a href="#dependecies">Dependencies</a>
+• <a href="#dependencies">Dependencies</a>
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@
 
 ---
 
-## <a name="dependecies">Dependencies</a>
+## <a name="dependencies">Dependencies</a>
 
 * https://github.com/andry81/gitcmd
 * https://github.com/andry81/contools
