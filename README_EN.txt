@@ -1,5 +1,5 @@
 * README_EN.txt
-* 2024.08.31
+* 2025.03.14
 * gituserbin
 
 1. DESCRIPTION
@@ -27,24 +27,6 @@ First mirror:
 Second mirror:
   * https://gitlab.com/andry81/gituserbin/-/branches
     https://gitlab.com/andry81/gituserbin.git
-
-Gitcmd:
-
-Primary:
-  * https://github.com/andry81/gitcmd
-First mirror:
-  * https://sf.net/p/gitcmd/gitcmd
-Second mirror:
-  * https://gitlab.com/andry81/gitcmd
-
-Contools:
-
-Primary:
-  * https://github.com/andry81/contools
-First mirror:
-  * https://sf.net/p/contools/contools
-Second mirror:
-  * https://gitlab.com/andry81/contools
 
 -------------------------------------------------------------------------------
 3. PREREQUISITES
@@ -85,11 +67,12 @@ with or from and repositories:
 -------------------------------------------------------------------------------
 * gitcmd
 * contools
+* contools--admin
 
 -------------------------------------------------------------------------------
 5. USAGE
 -------------------------------------------------------------------------------
-Put `gutuserbin` scripts into the root of your git repositories to call them
+Put `gituserbin` scripts into the root of your git repositories to call them
 using the `..` syntax from the console windows opened in a repository working
 copy:
 

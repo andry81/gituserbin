@@ -35,3 +35,4 @@
 
 * https://github.com/andry81/gitcmd
 * https://github.com/andry81/contools
+* https://github.com/andry81/contools--admin
