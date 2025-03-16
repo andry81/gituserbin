@@ -1,5 +1,5 @@
 * README_EN.txt
-* 2025.03.14
+* 2025.03.16
 * gituserbin
 
 1. DESCRIPTION
@@ -13,7 +13,7 @@
 -------------------------------------------------------------------------------
 1. DESCRIPTION
 -------------------------------------------------------------------------------
-Git user script wrappers for projects root directory.
+Git user scripts for the `PATH` variable.
 
 -------------------------------------------------------------------------------
 2. REPOSITORIES
@@ -58,42 +58,70 @@ with or from and repositories:
   You must put the repository working copy into the
   `$PROJECTS_ROOT/andry81/gitcmd/gitcmd` directory.
 
-* contools
+* contools--admin
   You must put the repository working copy into the
-  `$PROJECTS_ROOT/andry81/contools/contools` directory.
+  `$PROJECTS_ROOT/andry81/contools/contools--admin` directory.
 
 -------------------------------------------------------------------------------
 4. DEPENDENCIES
 -------------------------------------------------------------------------------
 * gitcmd
-* contools
 * contools--admin
 
 -------------------------------------------------------------------------------
 5. USAGE
 -------------------------------------------------------------------------------
-Put `gituserbin` scripts into the root of your git repositories to call them
-using the `..` syntax from the console windows opened in a repository working
-copy:
+Put `gituserbin` working copy into the directory of the root of your git
+repositories directory:
 
 <root>
  |
- +- <USER>
+ +- andry81
  |   |
- |   +- <REPO-GROUP>
+ |   +- gituserbin
  |       |
- |       +- <REPO>
- |          # Current directory of your opened console window.
+ |       +- gituserbin
  |
- ... # gituserbin scripts ...
-
->
-../../../<git-user-bin-script> ...
 
 NOTE:
-  Each script basically is a wrapper to a script from the `gitcmd` project.
-  To read the usage description you must open the corresponding `gitcmd`
-  script.
+  Most of the scripts basically wrappers to scripts from the `gitcmd` project.
+  To read the usage description you must open the corresponding dependent
+  project script.
+
+Put `gitcmd` a working copy root directory into the directory of the
+root of your git repositories directory:
+
+<root>
+ |
+ +- andry81
+ |   |
+ |   +- gitcmd
+ |       |
+ |       +- gitcmd
+ |
+
+Then put `contools--admin` a working copy root directory into the directory of
+the root of your git repositories directory:
+
+<root>
+ |
+ +- andry81
+ |   |
+ |   +- contools
+ |       |
+ |       +- contools--admin
+ |
+
+Create `PROJECTS_ROOT` environment variable with path to your git repositories
+directory:
+
+>
+PROJECTS_ROOT=<root>
+
+Put `gituserbin` a working copy scripts directory into the `PATH` variable:
+
+>
+set PATH=%PATH%;%PROJECTS_ROOT%\andry81\gituserbin\gituserbin\scripts
 
 -------------------------------------------------------------------------------
 6. PROJECT CONFIGURATION VARIABLES

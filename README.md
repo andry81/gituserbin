@@ -1,4 +1,4 @@
-<p align="center">Git user script wrappers for projects root directory.</p>
+<p align="center">Git user scripts for the `PATH` variable.</p>
 
 <!-- - ->
 <p align="center">
@@ -34,5 +34,4 @@
 ## <a name="dependencies">Dependencies</a>
 
 * https://github.com/andry81/gitcmd
-* https://github.com/andry81/contools
 * https://github.com/andry81/contools--admin
