@@ -100,7 +100,7 @@ root of your git repositories directory:
  |       +- gitcmd
  |
 
-Then put `contools--admin` a working copy root directory into the directory of
+Put `contools--admin` a working copy root directory into the directory of
 the root of your git repositories directory:
 
 <root>
