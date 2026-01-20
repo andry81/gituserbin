@@ -6,6 +6,6 @@ rem   newcred.bat git:https://USER@github.com USER PASS LocalMachine
 
 setlocal
 
-call "%%PROJECTS_ROOT%%/andry81/contools/contools--admin/scripts/Wincred/newcred.bat" %%*
+call "%%PROJECTS_ROOT%%/andry81/contools/contools--admin/scripts/Windows/Cred/newcred.bat" %%*
 
 pause
