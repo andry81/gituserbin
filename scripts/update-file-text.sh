@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Examples:
 #   # To update all commits in all heads to update first commit(s) in all

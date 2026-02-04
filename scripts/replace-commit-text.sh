@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 # Examples:
 #   # Removes `Update README.md` line from all commits.
