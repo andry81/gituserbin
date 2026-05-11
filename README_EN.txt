@@ -1,5 +1,5 @@
 * README_EN.txt
-* 2025.03.16
+* 2026.05.11
 * gituserbin
 
 1. DESCRIPTION
@@ -13,7 +13,7 @@
 -------------------------------------------------------------------------------
 1. DESCRIPTION
 -------------------------------------------------------------------------------
-Git user scripts for the `PATH` variable.
+Git user scripts accessible from the `PATH` variable.
 
 -------------------------------------------------------------------------------
 2. REPOSITORIES
@@ -31,8 +31,8 @@ Second mirror:
 -------------------------------------------------------------------------------
 3. PREREQUISITES
 -------------------------------------------------------------------------------
-Currently used these set of OS platforms, applications to run
-with or from and repositories:
+Currently used these set of OS platforms and applications to run
+with or from:
 
 1. OS platforms:
 
@@ -52,16 +52,6 @@ with or from and repositories:
   https://git-scm.com
   - Freeware console application to maintain GIT version control system.
 
-3. Repositories:
-
-* gitcmd
-  You must put the repository working copy into the
-  `$PROJECTS_ROOT/andry81/gitcmd/gitcmd` directory.
-
-* contools--admin
-  You must put the repository working copy into the
-  `$PROJECTS_ROOT/andry81/contools/contools--admin` directory.
-
 -------------------------------------------------------------------------------
 4. DEPENDENCIES
 -------------------------------------------------------------------------------
@@ -71,46 +61,29 @@ with or from and repositories:
 -------------------------------------------------------------------------------
 5. USAGE
 -------------------------------------------------------------------------------
-Put `gituserbin` working copy into the directory of the root of your git
-repositories directory:
+Put `gituserbin` working copy and dependencies into the directory of the root of
+your git repositories directory:
 
 <root>
  |
  +- andry81
- |   |
- |   +- gituserbin
- |       |
- |       +- gituserbin
- |
+     |
+     +- contools
+     |   |
+     |   +- contools--admin
+     |
+     +- gitcmd
+     |   |
+     |   +- gitcmd
+     |
+     +- gituserbin
+         |
+         +- gituserbin
 
 NOTE:
-  Most of the scripts basically wrappers to scripts from the `gitcmd` project.
+  Most of the scripts basically wrappers to scripts from a dependent project.
   To read the usage description you must open the corresponding dependent
   project script.
-
-Put `gitcmd` a working copy root directory into the directory of the
-root of your git repositories directory:
-
-<root>
- |
- +- andry81
- |   |
- |   +- gitcmd
- |       |
- |       +- gitcmd
- |
-
-Put `contools--admin` a working copy root directory into the directory of
-the root of your git repositories directory:
-
-<root>
- |
- +- andry81
- |   |
- |   +- contools
- |       |
- |       +- contools--admin
- |
 
 Create `PROJECTS_ROOT` environment variable with path to your git repositories
 directory:
@@ -118,7 +91,7 @@ directory:
 >
 PROJECTS_ROOT=<root>
 
-Put `gituserbin` a working copy scripts directory into the `PATH` variable:
+Put `gituserbin` scripts directory path into the `PATH` variable:
 
 >
 set PATH=%PATH%;%PROJECTS_ROOT%\andry81\gituserbin\gituserbin\scripts
@@ -126,13 +99,16 @@ set PATH=%PATH%;%PROJECTS_ROOT%\andry81\gituserbin\gituserbin\scripts
 -------------------------------------------------------------------------------
 6. PROJECT CONFIGURATION VARIABLES
 -------------------------------------------------------------------------------
-To be able to use the scripts you have to declare the set of environment
+To be able to use the scripts, you have to declare the set of environment
 variables. Here is described only a limited set of variables, you have to open
 each corresponding script to find out which one variable you must to define.
 
 * PROJECTS_ROOT
 
-  Main environment variable to call the `gitcmd` project scripts.
+  Main environment variable to access a tree of repositories.
+
+  Basically must exist in the Windows registry to be defined for all console
+  instances.
 
 * GIT_REPO_DEFAULT_REMOTES
 
