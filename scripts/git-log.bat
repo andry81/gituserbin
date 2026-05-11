@@ -1,13 +1,7 @@
 @echo off
 
-rem USAGE:
-rem   git-log.bat commit.log
-
 setlocal
 
-if "%~1" == "" (
-  echo %~nx0: error: output file is not defined.
-  exit /b 255
-) >&2
+"%GIT_SHELL_ROOT%\bin\bash.exe" "%~dpn0.sh" %*
 
-git log --format="%%B%%-C()%%n" > "%~1"
+pause
