@@ -1,5 +1,5 @@
 * README_EN.txt
-* 2026.05.11
+* 2026.06.09
 * gituserbin
 
 1. DESCRIPTION
@@ -103,12 +103,13 @@ To be able to use the scripts, you have to declare the set of environment
 variables. Here is described only a limited set of variables, you have to open
 each corresponding script to find out which one variable you must to define.
 
+NOTE:
+  All variables basically must exist in a global config or in the Windows
+  registry to be defined for all console instances.
+
 * PROJECTS_ROOT
 
   Main environment variable to access a tree of repositories.
-
-  Basically must exist in the Windows registry to be defined for all console
-  instances.
 
 * GIT_REPO_DEFAULT_REMOTES
 
@@ -140,6 +141,12 @@ each corresponding script to find out which one variable you must to define.
   Git user with authentication to use in case of git+ssh authentication,
   for example, in `gitcmd/scripts/git_init.sh`
   (`gituserbin/git-init.sh`) script.
+
+* DEFAULT_EXCLUDE_DIRS
+
+  Double quoted directories list with file globbing: `"*.a" "b.*" ...`
+  Defines a list of directories is excluded from a search by default in all
+  scripts or application instances.
 
 -------------------------------------------------------------------------------
 7. AUTHOR
