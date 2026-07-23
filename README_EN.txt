@@ -1,5 +1,5 @@
 * README_EN.txt
-* 2026.06.09
+* 2026.07.23
 * gituserbin
 
 1. DESCRIPTION
@@ -147,6 +147,11 @@ NOTE:
   Double quoted directories list with file globbing: `"*.a" "b.*" ...`
   Defines a list of directories is excluded from a search by default in all
   scripts or application instances.
+
+* USER_EXCLUDE_DIRS
+
+  The same as `DEFAULT_EXCLUDE_DIRS`, adds a user configuration list of
+  directories.
 
 -------------------------------------------------------------------------------
 7. AUTHOR
